@@ -1,0 +1,179 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+    Name = "Than's Project - 2025",
+    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+    LoadingTitle = "Project Erixity",
+    LoadingSubtitle = "by Than",
+    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+ 
+    DisableRayfieldPrompts = false,
+    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+ 
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "Big Hub"
+    },
+ 
+    Discord = {
+       Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+       Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+ 
+    KeySystem = false, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "Untitled",
+       Subtitle = "Key System",
+       Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+    }
+ })
+
+
+ local Tab = Window:CreateTab("universal lol", "atom")
+
+ local Button = Tab:CreateButton({
+   Name = "1 - Infinite Yield",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "2 - CMD_X",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "3 - Sirius",
+   Callback = function()
+      loadstring(game:HttpGet('https://sirius.menu/sirius'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "4 - System Broken",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "5 - Universal Aimbot",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/agreed69-scripts/open-src-scripts/refs/heads/main/Universal%20Aimbot.lua",true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "6 - Ez Hub",
+   Callback = function()
+      loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug42O/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+   end,
+})
+
+local Tab = Window:CreateTab("game hubs", "atom")
+
+local Button = Tab:CreateButton({
+   Name = "TSB - Vexon Hub",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/DiosDi/VexonHub/refs/heads/main/VexonHub"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Flood Escape 2 - Flood GUI v3",
+   Callback = function()
+      loadstring(game:HttpGet"https://raw.github.com/ImMejor35/Flood-GUI/main/loader.lua")"main"
+   end,
+})
+
+local Tab = Window:CreateTab("experiment", "atom")
+
+local Button = Tab:CreateButton({
+   Name = "[FE] C00lgui Reborn RC7",
+   Callback = function()
+      loadstring(game:GetObjects("rbxassetid://8127297852")[1].Source)()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Moon Yield",
+   Callback = function()
+      loadstring(game:HttpGetAsync("https://lycheefeather.github.io/moon-yield/script.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "ryza.us hub",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/ZLens/3v2g784tb7r63vtavs/refs/heads/main/helloworld.lua'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Evarge Control Panel - key is evarge501",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/projecter94/ECP/refs/heads/main/Everage%20Control%20Panel"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "IY Reborn - Legacy",
+   Callback = function()
+      loadstring(game:HttpGet(('https://raw.githubusercontent.com/mxsynry/infiniteyield-reborn/refs/heads/scriptblox/source' or 'https://mxsynry.github.io/storage/iyrbackup/legacy/scriptblox/source')))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "SBBF - Use Paintball",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/ThanErenevReal/LoadstringConvert/refs/heads/main/SBBFPaintball"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "PETAPETA Esp",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/ThanErenevReal/LoadstringConvert/refs/heads/main/PETAPETAScriptESP"))()
+   end,
+})
+
+local Tab = Window:CreateTab("key required", "atom")
+
+local Button = Tab:CreateButton({
+   Name = "BetterBypasser",
+   Callback = function()
+      loadstring(game:HttpGet("https://github.com/Synergy-Networks/products/raw/main/BetterBypasser/loader.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Forge Hub - (Alot of games) - Linkvertise Key System",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua"))()
+   end,
+})
+
+local Tab = Window:CreateTab("Extra Functions", "atom")
+
+local Button = Tab:CreateButton({
+   Name = "Destroy GUI",
+   Callback = function()
+      Rayfield:Destroy()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Leave Game / Do game:Shutdown()",
+   Callback = function()
+      game:Shutdown()
+   end,
+})
